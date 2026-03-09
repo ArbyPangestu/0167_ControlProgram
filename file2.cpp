@@ -17,4 +17,18 @@ int main(){
     float nilB, nilMT, rerata;
     string status;
 
+      cout << "Masukkan nilai Bahasa Inggris = ";
+    cin >> nilB;
+    cout << "Masukkan nilai Matematika = ";
+    cin >> nilMT;
+
+    //rerata = (nilB+nilMT)/2;
+    //status = "Lolos";
+    //status = "Gagal";
+    rerata = Rata_rata(nilB, nilMT);
+    //status = Status_lulus(rerata);
+
+    cout << "Status kelulusan = " << Status_lulus(rerata) 
+         << " dengan nilai rerata = " << rerata << endl;
+
 }
